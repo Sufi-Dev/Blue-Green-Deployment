@@ -5,7 +5,7 @@
 Blue-green deployment is a technique that reduces downtime and risk by running two identical production environments called Blue and Green.<br>
 In this project I automated the provisioning of Infrastructure in Azure for both Blue and Green environments using Terraform.<br>
 
-## Project Map 🗾
+## Project Map <img src="https://raw.githubusercontent.com/Sufi-Dev/Sufi-Dev/main/icons/map.png" width="30" height="30">
 
 ## Tools 🛠
 <img src="https://raw.githubusercontent.com/Sufi-Dev/Sufi-Dev/main/icons/azure.svg" alt="azure" width="40" height="20"/> Azure
