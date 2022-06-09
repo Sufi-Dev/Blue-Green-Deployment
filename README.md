@@ -16,4 +16,3 @@ NoSQL <a href="https://azure.microsoft.com/en-in/" target="_blank" rel="noreferr
 ## Related Pojects 🔗
 Checkout the project where I fully automated CI/CD pipeline in Azure DevOps. see below link<br>
 [Designed & deployed fully automated CI/CD in Azure DevOps](https://github.com/Sufi-Dev/weatherapi)
-<img src="https://raw.githubusercontent.com/Sufi-Dev/Sufi-Dev/main/icons/info.gif"</>
