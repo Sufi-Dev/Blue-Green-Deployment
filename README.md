@@ -12,6 +12,6 @@ Terraform <a href="https://azure.microsoft.com/en-in/" target="_blank" rel="nore
 Linux <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/Sufi-Dev/Sufi-Dev/main/icons/linux.svg" alt="linux" width="40" height="40"/> </a>
 NoSQL <a href="https://azure.microsoft.com/en-in/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/Sufi-Dev/Sufi-Dev/main/icons/nosql.svg" alt="azure" width="40" height="40"/> </a>
 
-## Related Pojects
-Checkout the fully automated CI/CD pipeline in Azure DevOps. see below link<br>
+## Related Pojects 🔗
+Checkout the project where I fully automated CI/CD pipeline in Azure DevOps. see below link<br>
 [Designed & deployed fully automated CI/CD in Azure DevOps](https://github.com/Sufi-Dev/weatherapi)
