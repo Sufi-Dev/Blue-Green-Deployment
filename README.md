@@ -1,6 +1,7 @@
 <img src="https://raw.githubusercontent.com/Sufi-Dev/Blue-Green-Deployment/main/BlueGreen.png" >
 
-## Project Info ℹ️
+## Project Info <img src="https://raw.githubusercontent.com/Sufi-Dev/Sufi-Dev/main/icons/info.gif" >
+
 Blue-green deployment is a technique that reduces downtime and risk by running two identical production environments called Blue and Green.<br>
 In this project I automated the provisioning of Infrastructure in Azure for both Blue and Green environments using Terraform.<br>
 
@@ -15,3 +16,4 @@ NoSQL <a href="https://azure.microsoft.com/en-in/" target="_blank" rel="noreferr
 ## Related Pojects 🔗
 Checkout the project where I fully automated CI/CD pipeline in Azure DevOps. see below link<br>
 [Designed & deployed fully automated CI/CD in Azure DevOps](https://github.com/Sufi-Dev/weatherapi)
+<img src="https://raw.githubusercontent.com/Sufi-Dev/Sufi-Dev/main/icons/info.gif"</>
