@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/Sufi-Dev/Blue-Green-Deployment/main/BlueGreen.png" >
+<img src="https://raw.githubusercontent.com/Sufi-Dev/Blue-Green-Deployment/main/BlueGreens.png" >
 
 ## Project Info <img src="https://raw.githubusercontent.com/Sufi-Dev/Sufi-Dev/main/icons/info.gif" width="30" height="30">
 
