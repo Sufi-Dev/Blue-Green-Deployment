@@ -24,7 +24,3 @@ variable "vm_size" {
   type    = string
   default = "Standard_B2_s"
 }
-variable "db_location" {
-  type    = string
-  default = "eastasia"
-}
