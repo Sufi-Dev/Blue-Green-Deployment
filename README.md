@@ -23,6 +23,33 @@ terraform apply -auto-approve
 terraform workspace select blue
 terraform plan
 terraform apply -auto-approve 
+
+```
+I used modules heavily, because `modules` make code easier to read, maintain, and debug.
+``` yml
+Blue-Green-Deployment/
+├── main.tf
+├── modules
+│   ├── compute
+│   │   └── vmss
+│   │       ├── main.tf
+│   │       ├── outputs.tf
+│   │       └── variable.tf
+│   ├── network
+│   │   └── vnet
+│   │       ├── maint.tf
+│   │       ├── outputs.tf
+│   │       └── variable.tf
+│   └── security
+│       └── network_security_group
+│           ├── maint.tf
+│           └── variable.tf
+├── outputs.tf
+├── provider.tf
+├── terraform.tfvars
+└── variables.tf
+
+7 directories, 13 files
 ```
 2. **`Gateway Deployment`**: All the terraform files required to set up the backend database servers can be found in this directory. When the Green environment is up and running, traffic is routed through the traffic manager, which switches to the Blue resource group when the Green environment goes down.
 ## Tools 🛠
