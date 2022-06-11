@@ -63,9 +63,9 @@ data "azurerm_public_ip" "green_ip" {
 
 ``` terraform
 # Referencing Server's IP in Blue environment
-data "azurerm_public_ip" "green_ip" {
+data "azurerm_public_ip" "blue_ip" {
   name                = "Server_PIP"
-  resource_group_name = "Green_RG"
+  resource_group_name = "Blue_RG"
 }
 ```
 Here is what is inside this directory 
