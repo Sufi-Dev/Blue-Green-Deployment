@@ -26,7 +26,7 @@ terraform apply -auto-approve
 
 ```
 I used modules heavily, because `modules` make code easier to read, maintain, and debug.
-``` yml
+```
 Blue-Green-Deployment/
 ├── main.tf
 ├── modules
@@ -51,7 +51,45 @@ Blue-Green-Deployment/
 
 7 directories, 13 files
 ```
-2. **`Gateway Deployment`**: All the terraform files required to set up the backend database servers can be found in this directory. When the Green environment is up and running, traffic is routed through the traffic manager, which switches to the Blue resource group when the Green environment goes down.
+2. **`Gateway Deployment`**: All the terraform files required to set up the backend database servers can be found in this directory. When the Green environment is up and running, traffic is routed through the traffic manager, which switches to the Blue resource group when the Green environment goes down.<br>
+Since configuration code for Gateway is separate from production environment, I used terraform's `data` source which lets terraform to use information defined outside of terraform configuration.
+``` terraform
+# Referencing Server's IP in Green environment
+data "azurerm_public_ip" "green_ip" {
+  name                = "Server_PIP"
+  resource_group_name = "Green_RG"
+}
+```
+
+``` terraform
+# Referencing Server's IP in Blue environment
+data "azurerm_public_ip" "green_ip" {
+  name                = "Server_PIP"
+  resource_group_name = "Green_RG"
+}
+```
+Here is what is inside this directory 
+
+```
+Gateway-Deployment/
+├── main.tf
+├── modules
+│   ├── network
+│   │   └── traffic_manager
+│   │       ├── main.tf
+│   │       ├── outputs.tf
+│   │       └── variable.tf
+│   └── storage
+│       └── cosmosDB
+│           ├── main.tf
+│           └── variable.tf
+├── outputs.tf
+├── provider.tf
+├── terraform.tfvars
+└── variables.tf
+
+5 directories, 10 files
+```
 ## Tools 🛠
 <img src="https://raw.githubusercontent.com/Sufi-Dev/Sufi-Dev/main/icons/azure.svg" alt="azure" width="40" height="20"/> Azure
 <img src="https://raw.githubusercontent.com/Sufi-Dev/Sufi-Dev/main/icons/terraform.svg" alt="azure" width="40" height="20"/> Terraform
