@@ -1,5 +1,5 @@
 terraform {
-   backend "azurerm" {
+  backend "azurerm" {
     resource_group_name  = "RG_TF"
     storage_account_name = "storage01"
     container_name       = "terraform-container"
@@ -7,7 +7,7 @@ terraform {
   }
   required_providers {
     azurerm = {
-      source = "hashicorp/azurerm"
+      source  = "hashicorp/azurerm"
       version = "=3.0.0"
     }
   }
